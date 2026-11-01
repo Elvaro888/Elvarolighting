@@ -35,3 +35,10 @@ Product entries and imagery are illustrative references. Official photos, models
 Use dist as the static root. The intended domain elvarolighting.com has not been connected.
 
 Private preview: https://elvaro-lighting.selectgnat.chatgpt.site
+
+## Google Analytics
+All 30 HTML pages include the Google tag once in the head using measurement ID G-QM772ND6E4.
+
+Run node verify-analytics.cjs to validate tag coverage, placement and initialization.
+The measurement ID is public. No visitor form fields or inquiry content are sent as custom analytics parameters.
+Actual data receipt must be confirmed in the Google Analytics Realtime report.
