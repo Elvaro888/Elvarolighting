@@ -1,0 +1,5 @@
+document.querySelector('.menu').onclick=()=>document.querySelector('header nav').classList.toggle('open');
+document.querySelector('#year').textContent=new Date().getFullYear();
+document.addEventListener('click',e=>document.querySelectorAll('.product-menu[open]').forEach(m=>{if(!m.contains(e.target))m.open=false}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.product-menu[open]').forEach(m=>{m.open=false;m.querySelector('summary').focus()})});
+document.querySelectorAll('.product-inquiry').forEach(form=>form.onsubmit=e=>{e.preventDefault();const f=new FormData(form);const body=['Name: '+f.get('name'),'Email: '+f.get('email'),'Country: '+f.get('country'),'Phone: '+f.get('phone'),'Page: '+location.href,'',f.get('message')].join('\n');location.href='mailto:contact@elvarolighting.com?subject='+encodeURIComponent('ELVARO Lighting — Product Inquiry')+'&body='+encodeURIComponent(body);form.querySelector('.mail-status').textContent='Review and send your draft in your email app. If it does not open, email contact@elvarolighting.com directly.'});

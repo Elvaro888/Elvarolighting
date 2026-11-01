@@ -35,4 +35,3 @@ Product entries and imagery are illustrative references. Official photos, models
 Use dist as the static root. The intended domain elvarolighting.com has not been connected.
 
 Private preview: https://elvaro-lighting.selectgnat.chatgpt.site
-

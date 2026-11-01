@@ -1,0 +1,1 @@
+const fs=require('fs');const p='dist/assets/catalog.js';let s=fs.readFileSync(p,'utf8');s=s.replace('href="#\'+p.id+\'" data-detail=','href="/products/details/\'+p.id+\'.html" data-detail=');fs.writeFileSync(p,s);
