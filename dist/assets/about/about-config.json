@@ -1,0 +1,213 @@
+{
+  "assetBase": "/assets/about/",
+  "hero": {
+    "file": "about-hero.jpg",
+    "label": "Architectural Lighting Hero Image",
+    "alt": "Architectural entrance illuminated by sculptural linear lighting at night",
+    "ratio": "12 / 5",
+    "fit": "cover",
+    "position": "center 48%",
+    "provenance": "Client-supplied project photograph"
+  },
+  "company": {
+    "file": "about-company.jpg",
+    "label": "Company & Lighting Showroom",
+    "alt": "Lighting application showroom with illuminated cabinetry and backlit wall surfaces",
+    "ratio": "4 / 3",
+    "fit": "cover",
+    "provenance": "Client-supplied showroom photograph"
+  },
+  "manufacturing": [
+    {
+      "file": "factory-overview.jpg",
+      "label": "Factory Overview",
+      "alt": "Overview of a lighting production floor with workstations and LED components",
+      "ratio": "4 / 3",
+      "caption": "A view across the lighting production floor."
+    },
+    {
+      "file": "factory-workshop.jpg",
+      "label": "Production Workshop",
+      "alt": "Production benches with lighting components and assembly work in progress",
+      "ratio": "4 / 3",
+      "caption": "Workstations for lighting production and preparation."
+    },
+    {
+      "file": "factory-assembly.jpg",
+      "label": "Lighting Assembly",
+      "alt": "Team members assembling lighting components at a production bench",
+      "ratio": "4 / 3",
+      "caption": "Hands-on assembly of lighting components."
+    },
+    {
+      "file": "factory-testing.jpg",
+      "label": "Product Testing",
+      "alt": "Lighting test area with integrating sphere and test equipment",
+      "ratio": "4 / 3",
+      "caption": "A dedicated area for lighting product measurements and testing."
+    },
+    {
+      "file": "factory-aging.jpg",
+      "label": "Aging Test",
+      "alt": "Rows of illuminated LED strip reels on powered aging-test racks",
+      "ratio": "4 / 3",
+      "caption": "LED strip lighting undergoing powered aging tests."
+    },
+    {
+      "file": "factory-packaging.jpg",
+      "label": "Packaging & Dispatch",
+      "alt": "Packaged LED strips and power supplies stacked near the warehouse for dispatch",
+      "ratio": "4 / 3",
+      "caption": "Packaged lighting products prepared for dispatch."
+    }
+  ],
+  "patentWall": {
+    "file": "patent-wall.jpg",
+    "label": "Patent Display Wall",
+    "alt": "Client-supplied patent and certification display wall with framed documents",
+    "ratio": "16 / 9",
+    "fit": "contain",
+    "caption": "Our patent and certification display. Individual document details are shown only when supplied."
+  },
+  "patents": [],
+  "certificates": [
+    {
+      "file": "certificate-01.jpg",
+      "label": "Product Conformity Document",
+      "alt": "Supplied certificate of conformity for listed LED light models under the LVD directive",
+      "ratio": "3 / 4",
+      "title": "LED Light — LVD Conformity",
+      "kind": "Product conformity document",
+      "number": "",
+      "issued": "2022-08-03",
+      "validUntil": "",
+      "scope": "Applies to the LED light samples and model references identified in the supplied document.",
+      "verification": "Supplied document; issuer status not independently checked."
+    },
+    {
+      "file": "certificate-02.jpg",
+      "label": "Quality Management Certificate",
+      "alt": "Supplied ISO 9001:2015 quality management system certificate naming Zhejiang Jindalai Lighting Technology Co., Ltd.",
+      "ratio": "3 / 4",
+      "title": "ISO 9001:2015",
+      "kind": "Company management system",
+      "number": "04625Q13473R1S",
+      "issued": "2025-09-03",
+      "validUntil": "2028-09-29",
+      "scope": "R&D and production of LED SMD strip lighting, within the scope stated on the certificate.",
+      "verification": "Dates transcribed from the supplied document; ongoing validity is subject to issuer requirements."
+    },
+    {
+      "file": "certificate-03.jpg",
+      "label": "RoHS Conformity Document",
+      "alt": "Supplied RoHS certificate of conformity for listed LED light samples and models",
+      "ratio": "3 / 4",
+      "title": "LED Light — RoHS Conformity",
+      "kind": "Product conformity document",
+      "number": "",
+      "issued": "2022-08-02",
+      "validUntil": "",
+      "scope": "Applies to the specific LED light samples and model references listed in the supplied document.",
+      "verification": "Supplied document; issuer status not independently checked."
+    }
+  ],
+  "projects": [
+    {
+      "file": "project-01.jpg",
+      "label": "Hospitality Project",
+      "alt": "Night view of a hotel facade with linear architectural lighting",
+      "ratio": "3 / 2",
+      "name": "Hospitality Facade Lighting",
+      "location": "Location to be confirmed",
+      "application": "Hospitality Lighting",
+      "description": "Architectural illumination highlighting a hotel facade and its entrance.",
+      "detailUrl": ""
+    },
+    {
+      "file": "project-02.jpg",
+      "label": "Residential Project",
+      "alt": "Aerial view of a residential development with building and landscape lighting",
+      "ratio": "3 / 2",
+      "name": "Residential Lighting Environment",
+      "location": "Location to be confirmed",
+      "application": "Architectural Lighting",
+      "description": "Building and landscape lighting within a residential development.",
+      "detailUrl": ""
+    },
+    {
+      "file": "project-03.jpg",
+      "label": "Commercial Project",
+      "alt": "Commercial buildings and roof structures illuminated with linear lighting at night",
+      "ratio": "3 / 2",
+      "name": "Commercial Architectural Lighting",
+      "location": "Location to be confirmed",
+      "application": "Commercial Lighting",
+      "description": "Linear lighting accents across commercial architecture and roof structures.",
+      "detailUrl": ""
+    },
+    {
+      "file": "project-04.jpg",
+      "label": "Architectural & Outdoor Project",
+      "alt": "Architectural entrance canopy with sculptural illuminated branches",
+      "ratio": "3 / 2",
+      "name": "Architectural Entrance Lighting",
+      "location": "Location to be confirmed",
+      "application": "Architectural & Outdoor Lighting",
+      "description": "Sculptural light integrated into an outdoor architectural entrance.",
+      "detailUrl": ""
+    }
+  ],
+  "editorialNotes": {
+    "teamExperience": "20+ years and 100+ projects supplied by the client; these figures describe team experience.",
+    "facilityOwnership": "Not established. Captions describe the supplied photographs without asserting ownership.",
+    "eventReferences": [
+      {
+        "event": "Qingdao SCO Summit",
+        "role": null,
+        "status": "Awaiting project name, year and documented team participation"
+      },
+      {
+        "event": "Hangzhou G20 Summit",
+        "role": null,
+        "status": "Awaiting project name, year and documented team participation"
+      },
+      {
+        "event": "Wuhan National Games",
+        "role": null,
+        "status": "Awaiting event identification, year and documented team participation"
+      }
+    ],
+    "eventPublication": "Do not publish these event references until the role and supporting project facts are confirmed.",
+    "patents": "Display wall provided by client; no count, title, patent number or ownership is inferred from it.",
+    "projectSource": "Three detailed project summaries supplied directly by the client. These are not evidence of participation in the separately named summit or sports events. Existing portfolio photographs are not assigned to these named projects until confirmed."
+  },
+  "documentedProjects": [
+    {
+      "name": "Chengyun Technology — City Cloud & Big Data Industrial Base",
+      "location": "Binjiang District, Hangzhou, China",
+      "dateLabel": "Construction started",
+      "date": "March 2023",
+      "application": "Architectural floodlighting",
+      "lighting": "More than 3,000 custom lighting units, including flexible LED strips, linear lights and floodlights.",
+      "description": "A technology campus in the Binjiang Internet Economy Industrial Park, with a brief for a modern, precise architectural lighting identity."
+    },
+    {
+      "name": "Yueqing H-b12 & H-b15-1 Nightscape Lighting",
+      "location": "Yueqing, Zhejiang, China",
+      "dateLabel": "Completed",
+      "date": "March 2020",
+      "application": "Residential & landscape lighting",
+      "lighting": "More than 10,000 custom lighting units, including flexible LED strips, linear lights and floodlights.",
+      "description": "Nightscape lighting for urban plots surrounded by residential communities, riverside landscape and sports facilities."
+    },
+    {
+      "name": "Qijia Ship Lock — Facade Enhancement Lighting",
+      "location": "Qijia River, Hangzhou, China",
+      "dateLabel": "Completed",
+      "date": "2022",
+      "application": "Architectural facade lighting",
+      "lighting": "More than 3,000 custom lighting units, including linear lights.",
+      "description": "A lighting approach responding to flowing water and the changing form of a twisted ribbon facade at the Xiaoshan–Binjiang boundary."
+    }
+  ]
+}

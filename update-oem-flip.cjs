@@ -1,0 +1,25 @@
+const fs=require('node:fs'),p=require('node:path');
+const root=p.join(__dirname,'dist'),file=p.join(root,'index.html');let h=fs.readFileSync(file,'utf8');
+const flip=`<article class="flip-card"><a class="card flip-link" href="/products/led-downlights.html" aria-label="Explore LED Downlights"><span class="flip-scene"><span class="flip-inner"><span class="flip-face flip-front"><img src="/assets/down-light-white.jpg" alt="LED downlight on a white background" width="600" height="600" loading="lazy"></span><span class="flip-face flip-back"><img src="/assets/down-light.jpg" alt="LED downlight in a warm residential lighting scene" width="600" height="600" loading="lazy"></span></span></span><p>LED Downlights <span aria-hidden="true">→</span></p></a><button class="flip-toggle" type="button" aria-pressed="false" aria-label="Show LED Downlights scene photo">VIEW IN A SPACE <span aria-hidden="true">↻</span></button></article>`;
+// Only the homepage category sample uses the supplied pair.
+h=h.replace(/<a class="card" href="\/products\/led-downlights.html"><img class="series-image"[^>]*><p>LED Downlights[\s\S]*?<\/p><\/a>/,flip);
+const icons=[
+ '<rect x="10" y="11" width="28" height="26" rx="3"/><path d="M17 5v12m14-12v12M5 24h12m14 0h12M17 31v12m14-12v12"/>',
+ '<path d="M15 10h18l-3 9H18zM18 19l-8 19m14-19v23m6-23 8 19M8 44h32"/>',
+ '<path d="M8 12h32M8 24h32M8 36h32"/><circle cx="18" cy="12" r="4"/><circle cx="31" cy="24" r="4"/><circle cx="21" cy="36" r="4"/>',
+ '<path d="M8 16 24 8l16 8v22l-16 8-16-8zM8 16l16 8 16-8M24 24v22M17 12l16 8"/>'
+];
+const caps=[
+ ['Form & Finish','A fixture that fits your space.','Housing dimensions, mounting details, trims and surface finishes—developed around your drawings or design brief.','DIMENSIONS · MOUNTING · FINISH'],
+ ['Optics & Light Quality','Shape the light, not just the luminaire.','Discuss beam distribution, glare control, color temperature and color rendering to suit the atmosphere you want to create.','BEAM · COLOR · COMFORT'],
+ ['Power & Intelligent Control','Match the way your project works.','Review driver selection, dimming compatibility and control requirements alongside the electrical and installation plan.','DRIVER · DIMMING · CONTROL'],
+ ['Brand & Packaging','Make the finished product yours.','Define logo placement, product labels, instructions and packaging for a consistent presentation under your brand.','LOGO · LABELS · PACKAGING']
+];
+const oem=`<section id="oem-odm" class="oem-section" aria-labelledby="oem-heading"><div class="oem-intro"><div><span class="oem-eyebrow">OEM / ODM SOLUTIONS</span><h2 id="oem-heading">Your vision.<br>Precisely made.</h2></div><div class="oem-intro-copy"><p>From adapting an existing luminaire to developing a new product concept, define the details that make the lighting yours.</p><div class="oem-routes"><span><b>OEM</b> Your brand. A tailored product.</span><span><b>ODM</b> Your concept. A developed solution.</span></div></div></div><div class="oem-capabilities">${caps.map((c,i)=>`<article class="oem-capability"><div class="oem-card-top"><span class="oem-number">0${i+1}</span><svg viewBox="0 0 48 52" width="44" height="48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${icons[i]}</svg></div><h3>${c[0]}</h3><p class="oem-card-lead">${c[1]}</p><p>${c[2]}</p><span class="oem-tags">${c[3]}</span></article>`).join('')}</div><div class="oem-bottom"><div><p>From brief to production</p><ol class="oem-steps"><li>Share your brief</li><li>Technical review</li><li>Sample approval</li><li>Production</li></ol><p class="oem-note">Send drawings, target specifications or a reference sample. We’ll review feasibility and confirm options before sampling.</p></div><a class="gold" href="/contact.html#quote">START YOUR CUSTOM PROJECT <span aria-hidden="true">→</span></a></div></section>`;
+const old=/<section><h2>FEATURED PRODUCTS<\/h2>[\s\S]*?<\/section>/;
+if(!old.test(h))throw Error('Featured section not found');h=h.replace(old,oem);
+h=h.replace('</body>','<script src="/assets/product-flip.js"></script></body>');fs.writeFileSync(file,h);
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p.join(d,e.name)):[p.join(d,e.name)]);
+for(const f of walk(root).filter(f=>f.endsWith('.html'))){let s=fs.readFileSync(f,'utf8');s=s.replace(/href="(?:\/)?#customization"/g,'href="/#oem-odm"');fs.writeFileSync(f,s)}
+fs.writeFileSync(p.join(root,'assets/product-flip.js'),`document.querySelectorAll('.flip-toggle').forEach(button=>button.addEventListener('click',()=>{const card=button.closest('.flip-card');const active=card.classList.toggle('is-flipped');button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',active?'Show LED Downlights product photo':'Show LED Downlights scene photo');button.innerHTML=(active?'VIEW PRODUCT':'VIEW IN A SPACE')+' <span aria-hidden="true">↻</span>';}));`);
+console.log('Downlight flip sample installed; Featured Products replaced with four OEM/ODM capabilities.');

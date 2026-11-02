@@ -1,0 +1,171 @@
+{
+  "assetBase": "/assets/about/",
+  "images": {
+    "hero": {
+      "file": "about-hero.jpg",
+      "label": "Architectural Lighting Hero Image",
+      "alt": "Architectural entrance illuminated by sculptural linear lighting at night",
+      "ratio": "12 / 5",
+      "fit": "cover",
+      "position": "center 48%",
+      "provenance": "Client-supplied project photograph",
+      "srcset": "/assets/about/about-hero-640.jpg 640w, /assets/about/about-hero.jpg 1600w"
+    },
+    "company": {
+      "file": "about-company.jpg",
+      "label": "Company & Lighting Showroom",
+      "alt": "Lighting application showroom with illuminated cabinetry and backlit wall surfaces",
+      "ratio": "4 / 3",
+      "fit": "cover",
+      "provenance": "Client-supplied showroom photograph",
+      "srcset": "/assets/about/about-company-640.jpg 640w, /assets/about/about-company.jpg 1600w"
+    },
+    "factory-0": {
+      "file": "factory-overview.jpg",
+      "label": "Factory Overview",
+      "alt": "Overview of a lighting production floor with workstations and LED components",
+      "ratio": "4 / 3",
+      "caption": "A view across the lighting production floor.",
+      "srcset": "/assets/about/factory-overview-640.jpg 640w, /assets/about/factory-overview.jpg 1600w"
+    },
+    "factory-1": {
+      "file": "factory-workshop.jpg",
+      "label": "Production Workshop",
+      "alt": "Production benches with lighting components and assembly work in progress",
+      "ratio": "4 / 3",
+      "caption": "Workstations for lighting production and preparation.",
+      "srcset": "/assets/about/factory-workshop-640.jpg 640w, /assets/about/factory-workshop.jpg 1600w"
+    },
+    "factory-2": {
+      "file": "factory-assembly.jpg",
+      "label": "Lighting Assembly",
+      "alt": "Team members assembling lighting components at a production bench",
+      "ratio": "4 / 3",
+      "caption": "Hands-on assembly of lighting components.",
+      "srcset": "/assets/about/factory-assembly-640.jpg 640w, /assets/about/factory-assembly.jpg 1600w"
+    },
+    "factory-3": {
+      "file": "factory-testing.jpg",
+      "label": "Product Testing",
+      "alt": "Lighting test area with integrating sphere and test equipment",
+      "ratio": "4 / 3",
+      "caption": "A dedicated area for lighting product measurements and testing.",
+      "srcset": "/assets/about/factory-testing-640.jpg 640w, /assets/about/factory-testing.jpg 1600w"
+    },
+    "factory-4": {
+      "file": "factory-aging.jpg",
+      "label": "Aging Test",
+      "alt": "Rows of illuminated LED strip reels on powered aging-test racks",
+      "ratio": "4 / 3",
+      "caption": "LED strip lighting undergoing powered aging tests.",
+      "srcset": "/assets/about/factory-aging-640.jpg 640w, /assets/about/factory-aging.jpg 1600w"
+    },
+    "factory-5": {
+      "file": "factory-packaging.jpg",
+      "label": "Packaging & Dispatch",
+      "alt": "Packaged LED strips and power supplies stacked near the warehouse for dispatch",
+      "ratio": "4 / 3",
+      "caption": "Packaged lighting products prepared for dispatch.",
+      "srcset": "/assets/about/factory-packaging-640.jpg 640w, /assets/about/factory-packaging.jpg 1600w"
+    },
+    "patent-wall": {
+      "file": "patent-wall.jpg",
+      "label": "Patent Display Wall",
+      "alt": "Client-supplied patent and certification display wall with framed documents",
+      "ratio": "16 / 9",
+      "fit": "contain",
+      "caption": "Our patent and certification display. Individual document details are shown only when supplied.",
+      "srcset": "/assets/about/patent-wall-640.jpg 640w, /assets/about/patent-wall.jpg 1600w"
+    },
+    "cert-0": {
+      "file": "certificate-01.jpg",
+      "label": "Product Conformity Document",
+      "alt": "Supplied certificate of conformity for listed LED light models under the LVD directive",
+      "ratio": "3 / 4",
+      "title": "LED Light — LVD Conformity",
+      "kind": "Product conformity document",
+      "number": "",
+      "issued": "2022-08-03",
+      "validUntil": "",
+      "scope": "Applies to the LED light samples and model references identified in the supplied document.",
+      "verification": "Supplied document; issuer status not independently checked.",
+      "srcset": "/assets/about/certificate-01-640.jpg 640w, /assets/about/certificate-01.jpg 1600w"
+    },
+    "cert-1": {
+      "file": "certificate-02.jpg",
+      "label": "Quality Management Certificate",
+      "alt": "Supplied ISO 9001:2015 quality management system certificate naming Zhejiang Jindalai Lighting Technology Co., Ltd.",
+      "ratio": "3 / 4",
+      "title": "ISO 9001:2015",
+      "kind": "Company management system",
+      "number": "04625Q13473R1S",
+      "issued": "2025-09-03",
+      "validUntil": "2028-09-29",
+      "scope": "R&D and production of LED SMD strip lighting, within the scope stated on the certificate.",
+      "verification": "Dates transcribed from the supplied document; ongoing validity is subject to issuer requirements.",
+      "srcset": "/assets/about/certificate-02-640.jpg 640w, /assets/about/certificate-02.jpg 1600w"
+    },
+    "cert-2": {
+      "file": "certificate-03.jpg",
+      "label": "RoHS Conformity Document",
+      "alt": "Supplied RoHS certificate of conformity for listed LED light samples and models",
+      "ratio": "3 / 4",
+      "title": "LED Light — RoHS Conformity",
+      "kind": "Product conformity document",
+      "number": "",
+      "issued": "2022-08-02",
+      "validUntil": "",
+      "scope": "Applies to the specific LED light samples and model references listed in the supplied document.",
+      "verification": "Supplied document; issuer status not independently checked.",
+      "srcset": "/assets/about/certificate-03-640.jpg 640w, /assets/about/certificate-03.jpg 1600w"
+    },
+    "project-0": {
+      "file": "project-01.jpg",
+      "label": "Hospitality Project",
+      "alt": "Night view of a hotel facade with linear architectural lighting",
+      "ratio": "3 / 2",
+      "name": "Hospitality Facade Lighting",
+      "location": "Location to be confirmed",
+      "application": "Hospitality Lighting",
+      "description": "Architectural illumination highlighting a hotel facade and its entrance.",
+      "detailUrl": "",
+      "srcset": "/assets/about/project-01-640.jpg 640w, /assets/about/project-01.jpg 1600w"
+    },
+    "project-1": {
+      "file": "project-02.jpg",
+      "label": "Residential Project",
+      "alt": "Aerial view of a residential development with building and landscape lighting",
+      "ratio": "3 / 2",
+      "name": "Residential Lighting Environment",
+      "location": "Location to be confirmed",
+      "application": "Architectural Lighting",
+      "description": "Building and landscape lighting within a residential development.",
+      "detailUrl": "",
+      "srcset": "/assets/about/project-02-640.jpg 640w, /assets/about/project-02.jpg 1600w"
+    },
+    "project-2": {
+      "file": "project-03.jpg",
+      "label": "Commercial Project",
+      "alt": "Commercial buildings and roof structures illuminated with linear lighting at night",
+      "ratio": "3 / 2",
+      "name": "Commercial Architectural Lighting",
+      "location": "Location to be confirmed",
+      "application": "Commercial Lighting",
+      "description": "Linear lighting accents across commercial architecture and roof structures.",
+      "detailUrl": "",
+      "srcset": "/assets/about/project-03-640.jpg 640w, /assets/about/project-03.jpg 1600w"
+    },
+    "project-3": {
+      "file": "project-04.jpg",
+      "label": "Architectural & Outdoor Project",
+      "alt": "Architectural entrance canopy with sculptural illuminated branches",
+      "ratio": "3 / 2",
+      "name": "Architectural Entrance Lighting",
+      "location": "Location to be confirmed",
+      "application": "Architectural & Outdoor Lighting",
+      "description": "Sculptural light integrated into an outdoor architectural entrance.",
+      "detailUrl": "",
+      "srcset": "/assets/about/project-04-640.jpg 640w, /assets/about/project-04.jpg 1600w"
+    }
+  }
+}

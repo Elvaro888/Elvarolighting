@@ -1,0 +1,51 @@
+:root{--ivory:#f5eee7;--paper:#fffaf5;--copper:#a66328;--copper-hover:#874b1d;--ink:#342820;--muted:#74675d;--line:#dfcdbd;--dark:#30251e;--gold:#e4b878}
+body{background:var(--ivory);color:var(--ink);font-family:Arial,sans-serif}
+header{background:#352920;color:#fff8ef;border-bottom:1px solid #735138;padding-top:17px;padding-bottom:17px}
+header .logo{display:flex;align-items:center;flex-shrink:0;line-height:0}
+.brand-image{display:block;width:165px;height:51px;object-fit:contain}
+footer .brand-image{width:195px;height:61px;margin-bottom:22px}
+nav a:hover,.product-menu summary:hover,.product-menu[open] summary{color:var(--gold)}
+.gold,button{background:var(--copper);color:#fffaf5;transition:background .2s,transform .2s}
+.gold:hover,button:hover{background:var(--copper-hover)}
+button[disabled]:hover{background:transparent}
+.hero{background-image:linear-gradient(90deg,rgba(40,25,14,.8),rgba(40,25,14,.2)),url(https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=85)}
+.hero h1 em,.eyebrow,.icon,.benefits h3{color:var(--gold)}
+.hero .gold{background:#ad6c31}
+h2{font-weight:500;letter-spacing:.025em}h2.center:after{background:var(--copper)}
+section{padding-top:38px;padding-bottom:38px}
+#products{padding-top:30px;padding-bottom:30px}
+.dark,.detail-about{background:var(--dark);color:#fff7ed}
+.benefits{padding:10px 0}.benefits article{border-color:#ffffff20}.benefits p{color:#ede0d2}
+.product-image{background-color:#e9ddd0;border-radius:3px}
+.card p{color:var(--ink);letter-spacing:.02em}.card p span{color:var(--copper)}
+.dark .card p{color:#fff7ed}#cases .card p{background:#3b2d23;padding:14px 5px}
+.about{grid-template-columns:44% 1fr;gap:4%;align-items:stretch;padding-top:42px;padding-bottom:42px}
+.about .factory-image{background:url('/assets/elvaro-showroom.jpg') center/cover no-repeat;aspect-ratio:auto;min-height:0;height:100%;border-radius:3px}
+.about>div:last-child{display:flex;flex-direction:column;align-items:flex-start}
+.about h2{font-size:clamp(20px,2vw,28px);margin:0 0 18px;line-height:1.25}
+.about p{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:22px}
+.about .numbers{width:100%;gap:12px}.numbers b{color:var(--copper);font-weight:500}.numbers small{color:var(--muted)}
+.about .gold{margin-top:24px;padding:13px 23px}
+.page-head{background:#e9dacc;color:var(--ink);border-bottom:1px solid var(--line)}
+.breadcrumbs,.detail-crumbs a,.collection-nav a,.outline-link{color:var(--copper)}
+.collection-nav a,.outline-link{border-color:#ba8b63}.collection-nav a[aria-current]{background:var(--copper);color:white}
+.collection p,.story p,.product-copy p,.product-copy li,.detail-panel p{color:var(--muted)}
+.cta{background:#e9d8c6;padding-top:42px;padding-bottom:42px}.cta h2{color:#6c452b}
+footer{background:#30251e;color:#dfcbb8}footer .logo p{color:#dfcbb8}footer a:hover{color:#f3c68e}
+.product-options{background:#352920;border-color:var(--copper)}
+.product-overview,.detail-panel,dialog{background:var(--paper);border-color:var(--line)}
+.detail-tabs a{background:var(--paper);border-color:var(--line)}.detail-tabs a:first-child,.detail-tabs a:hover{background:var(--dark);border-color:var(--dark);color:var(--gold)}
+th{background:#efe1d3;color:#80502c}th,td,.faq-row{border-color:var(--line)}
+.caption,.note,.inquiry-note{color:var(--muted)}.dark .caption{color:#cebaa6}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #b57840;outline-offset:4px}
+@media(max-width:1050px){header nav{background:#352920}.product-options{background:#403024}}
+@media(max-width:800px){section{padding-top:30px;padding-bottom:30px}.about{grid-template-columns:1fr;gap:26px;padding:30px 5%}.about .factory-image{height:auto;aspect-ratio:1.7}.about p{font-size:14px}.about .numbers{flex-wrap:nowrap}.about .numbers>div{width:auto}.brand-image{width:146px;height:45px}.hero h1{font-size:clamp(32px,7vw,48px)}.benefits article{padding:10px 12px}.cta{padding:32px 5%}}
+
+/* Seven product series */
+#products h2{font-weight:700}.series-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}.series-grid .series-image{width:100%;height:auto;aspect-ratio:1.15;object-fit:cover;border-radius:3px}.series-grid .card p{font-size:11px;line-height:1.55;min-height:35px}.series-overview{display:block;width:100%;height:auto}.product-options{min-width:285px}.catalog-hero{background:#e9dacc;color:#342820}.catalog-tabs{background:#fffaf5}.catalog-tabs a{white-space:normal;min-width:100px;line-height:1.5}.catalog-hero p{color:#74675d}@media(max-width:1100px){.series-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:600px){.series-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.series-grid .card:last-child{grid-column:1/-1;max-width:calc(50% - 6px);width:100%;justify-self:center}}
+
+/* Eight square product-series cards */
+.series-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 16px}.series-grid .series-image{width:100%;height:auto;aspect-ratio:1;object-fit:contain}.series-overview{aspect-ratio:1;object-fit:contain}.series-grid .card:last-child{grid-column:auto;max-width:none;width:auto;justify-self:stretch}@media(max-width:600px){.series-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}.series-grid .card:last-child{grid-column:auto;max-width:none;width:auto;justify-self:stretch}}
+
+/* Actual project photography */
+#cases .card img{aspect-ratio:1.5;object-fit:cover}#detail:has(.project-full-image){max-width:1100px}#detail .project-full-image{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;margin:18px 0 24px}#cases [data-project="0"] img{object-position:50% 55%}#cases [data-project="3"] img{object-position:50% 55%}
