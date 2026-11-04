@@ -4,18 +4,20 @@ Official website for Zhejiang Jindalai Lighting Technology Co., Ltd.
 
 ## Deployment
 
-Static website. Vercel framework: Other; project root: repository root; build and install commands: none; output directory: `dist`. Routing is defined in `vercel.json`.
+Static HTML/CSS/JavaScript site. Vercel framework: Other; repository root; no build/install command; output directory: `dist`. `vercel.json` enables clean URLs, including `/about` and product routes.
 
 ## Source snapshot
 
-Synced from the current hosted website source commit `64eab06f27c7e9409b3cfdad332fd955b31979db` on 2026-11-02. Includes the latest product photographs, backlighting, garden lighting, product directory and About page.
+Website source synchronized from commit `146a539a934290caabb34d8188eeb9a443c4e694` on 2026-11-04, including the updated About page, real factory and project photographs, product imagery and official social profile links. Additional repository files are retained.
+
+## Maintenance
+
+Serve `dist` as the web root. Editing utilities live at repository root; some one-time migrations require original local assets. See `ABOUT-MAINTENANCE.md` for About image and content configuration.
 
 ## Verification
 
-Run `node verify-details.cjs`, `node verify-analytics.cjs` and `node verify-about.cjs`.
+Run `node verify-details.cjs` and `node verify-analytics.cjs`.
 
 ## Forms
 
-Product inquiry forms use the existing public Formcarry endpoint. No private API credentials are required in the frontend.
-
-Root scripts are editing and verification utilities; some are one-time migrations requiring original local image files. Serve `dist` as the web root.
+Forms use the existing public Formcarry endpoint. No private frontend credentials are required. Never commit API tokens, `.env` files or authentication state.
