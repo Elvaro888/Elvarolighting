@@ -7,6 +7,12 @@ function route(f){let s='/'+path.relative(root,f).replaceAll('\\','/');s=s.repla
 const routes=new Set(files.map(route));
 for(const file of files){let html=fs.readFileSync(file,'utf8'),url=origin+route(file);
  html=html.replaceAll('https://elvaro-lighting.selectgnat.chatgpt.site',origin);
+ const heading=html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1].replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
+ // Replace inherited boilerplate and the garden product's incorrect downlight description.
+ if(heading&&(/name="description" content="ELVARO Lighting — intelligent lighting solutions/.test(html)||file.endsWith('adjustable-garden-light.html')||route(file)==='/blog')){
+  let description=route(file)==='/blog'?'ELVARO lighting guides for B2B projects: compare LED strips, downlights, beam angles, IP ratings and installation requirements.':route(file)==='/'?'ELVARO Lighting by Zhejiang Jindalai Lighting Technology: explore LED lighting products, smart home solutions and OEM/ODM project enquiries.':`Explore ${heading} from ELVARO Lighting. View product information and contact our team to confirm specifications for your project.`;
+  html=html.replace(/(<meta name="description" content=")[^"]*(")/,(_,a,b)=>a+description.replaceAll('"','&quot;')+b);
+ }
  html=html.replace(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>\s*/gi,'');
  html=html.replace('</head>',`<link rel="canonical" href="${url}">\n</head>`);
  // Normalize only links that resolve to known HTML pages; preserve inquiry queries/fragments.
