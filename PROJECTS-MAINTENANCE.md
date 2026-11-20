@@ -2,6 +2,8 @@
 
 Public route: `/projects`. Static source: `dist/projects.html`. Navigation throughout the existing site now points to this route. The existing home project gallery remains available at `/#projects`.
 
+The intro includes `dist/assets/project-smart-home-600.jpg`, an exact 600 × 600 pixel modern smart-home concept image. `project-design-fees.html` is the editable fee-table module, inserted between service scope and project enquiry. The 2,000 m² villa is an illustrative quotation format; all rates and totals require an actual proposal. This section adds no fixed price or installation-service promise.
+
 Run `node build-projects.cjs` to regenerate this page from the current site's header/footer, update navigation and emit the application/drawing content. Then run `node build-seo.cjs` and `node verify-seo.cjs` to update and validate the sitemap. Styles and interactions live in `dist/assets/project-solutions.css` and `dist/assets/project-solutions.js`.
 
 The supplied Word design was used for the five applications, six drawing types (drainage and ventilation removed; second item changed to floor plan), service scope and six-stage workflow. Design fees, revision counts, delivery dates and implementation support require project-specific agreement. The competitor's images, fees and capability claims were not reused.
