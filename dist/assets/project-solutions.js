@@ -14,9 +14,9 @@ function tabs(selector,activate,vertical=false){
 tabs('[data-app]',button=>{
  const i=Number(button.dataset.app),a=apps[i];
  $('#app-category').textContent=a[0];$('#app-title').textContent=a[2];$('#app-description').textContent=a[3];$('#app-tags').textContent=a[4];
- $('#app-image').src=i===1?'/assets/project-solutions-villa.jpg':`/assets/project-${a[1]}.jpg`;
- $('#app-image').alt=i===1?'Concept visualization of villa lighting and a smart control panel':`${a[0]} lighting project`;
- $('#app-image-note').textContent=i===1?'LIGHTING & SMART HOME CONCEPT VISUALIZATION':'ELVARO PROJECT PHOTOGRAPHY';
+ $('#app-image').src=i===1?'/assets/project-villa-facade.jpg':`/assets/project-${a[1]}.jpg`;
+ $('#app-image').alt=i===1?'Concept visualization of a modern villa facade with warm wall washing, entrance step lights and courtyard lighting':`${a[0]} lighting project`;
+ $('#app-image-note').textContent=i===1?'VILLA FAÇADE LIGHTING · CONCEPT VISUALIZATION':'ELVARO PROJECT PHOTOGRAPHY';
  $('#app-panel').setAttribute('aria-labelledby',button.id);
 });
 const scenes={welcome:['Welcome home','A welcoming lighting level, softly illuminated stairs and an arrival scene coordinated with selected devices.','Welcoming ambient light','Arrival scene'],relax:['Time to unwind','A softer lighting atmosphere for quiet evenings, with accent lighting and curtain control included where specified.','Soft ambient & accent light','Relaxation scene'],night:['A quiet good night','Reduce the general lighting and plan low-level orientation light for night-time movement. Device actions are agreed in the scene schedule.','Low-level orientation light','Night scene']};

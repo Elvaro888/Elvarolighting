@@ -1,0 +1,7 @@
+# Private villa facade visual
+
+Asset: `dist/assets/project-villa-facade.jpg` (1536 × 1024). Generated with the built-in image generation tool and compressed for web delivery. Used only on the Private Villas application tab, labelled as a concept visualization. The interior hero and smart scene demonstration keep their existing images.
+
+Prompt:
+
+Create a premium photorealistic architectural lighting concept visualization for ELVARO Lighting website, landscape 3:2 aspect ratio. Exterior of an elegant contemporary two-storey luxury private villa at blue hour, viewed from street-level three-quarter angle, complete facade clearly visible in frame. Refined ivory natural stone walls, walnut entry door, bronze window frames, generous glazing with subtle warm interior light. Architectural lighting is the main subject: precise warm 3000K wall washers emphasize stone facade texture, slim recessed linear light under roof overhangs, discreet facade accents, illuminated entry steps, restrained garden path bollards and tree uplighting. Beautiful balanced night exposure with cool deep blue dusk sky, sophisticated modern minimal architecture, warm inviting light with realistic falloff, landscaped courtyard and low planting, no people, no cars, no text, no logos, no watermark. Full villa facade, not an interior room. Professional architectural photography, physically plausible light, subtle luxury, match warm ivory/chocolate/copper brand palette.
