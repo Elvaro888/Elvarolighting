@@ -1,0 +1,22 @@
+/* Shared product-detail presentation and conversion sections. */
+.detail-wrap .jdl-overview,.detail-wrap .product-overview{align-items:center}
+.detail-wrap .jdl-gallery,.detail-wrap .main-product-image{align-self:center;margin-block:0;min-width:0}
+.detail-wrap .jdl-gallery>img{object-fit:contain;object-position:center;max-width:100%;height:auto;margin-inline:auto}
+.detail-wrap .main-product-image .product-image{background-position:center}
+#product-inquiry{scroll-margin-top:24px}
+#product-inquiry .inquiry-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:20px}
+#product-inquiry label{display:block;line-height:1.6}
+#product-inquiry input,#product-inquiry textarea{box-sizing:border-box;max-width:100%;border-radius:0}
+#product-inquiry textarea{resize:vertical;min-height:130px}
+#product-inquiry .wide{grid-column:1/-1}
+#product-inquiry button[type=submit]{width:100%;min-height:44px}
+#product-inquiry button:disabled{cursor:wait;opacity:.65}
+#product-inquiry .inquiry-trap{position:absolute;left:-10000px;width:1px;height:1px}
+.detail-wrap .faq-row summary{min-height:44px;align-items:center}
+.detail-wrap .faq-row summary:focus-visible{outline:2px solid var(--copper,#a5672b);outline-offset:3px}
+.detail-wrap .recommendation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.detail-wrap .recommendation-grid article{min-width:0}
+.detail-wrap .recommendation-grid img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line,#ddd)}
+.detail-wrap .recommendation-grid h3{font-size:12px;line-height:1.6;margin:14px 0;text-align:center}
+@media(max-width:700px){.detail-wrap .jdl-overview,.detail-wrap .product-overview{grid-template-columns:1fr}.detail-wrap .jdl-gallery,.detail-wrap .main-product-image{width:100%;max-width:440px;justify-self:center}.detail-wrap .recommendation-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+@media(max-width:480px){#product-inquiry .inquiry-fields{grid-template-columns:1fr;gap:14px}.detail-wrap #product-inquiry{padding:20px}}
