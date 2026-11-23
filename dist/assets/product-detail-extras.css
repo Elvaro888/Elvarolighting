@@ -13,7 +13,7 @@
 #product-inquiry button:disabled{cursor:wait;opacity:.65}
 #product-inquiry .inquiry-trap{position:absolute;left:-10000px;width:1px;height:1px}
 .detail-wrap .faq-row summary{min-height:44px;align-items:center}
-.detail-wrap .faq-row summary:focus-visible{outline:2px solid var(--copper,#a5672b);outline-offset:3px}
+.detail-wrap .faq-row summary:focus-visible{outline:2px solid var(--copper,#9e7332);outline-offset:3px}
 .detail-wrap .recommendation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .detail-wrap .recommendation-grid article{min-width:0}
 .detail-wrap .recommendation-grid img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line,#ddd)}
